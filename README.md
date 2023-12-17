@@ -1,4 +1,4 @@
-# RRIoT
+# RRIoT Overview
 Repository for "RRIoT: Recurrent Reinforcement Learning for Cyber Threat Detection on IoT Devices" currently under review. 
 
 This repository hosts selected code for the manuscript titled "RRIoT: Recurrent Reinforcment Learning for Cyber Threat Detection on IoT Devices." The code from this repository is based mainly off the code found in this repository: https://github.com/gcamfer/Anomaly-ReactionRL. Major contributions compared to the previous repository include:
