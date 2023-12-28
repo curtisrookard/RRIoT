@@ -6,4 +6,4 @@ This repository hosts selected code for the manuscript titled "RRIoT: Recurrent 
 2) Incorporating the Deep Deterministic Policy Gradient model as part of the RIoT model
 3) Applying SAGE to determine global feature importance
 
-This repository contains code for the RRIoT algorithm. For source data of the TON-IoT telemetry dataset, please visit: https://research.unsw.edu.au/projects/toniot-datasets. For more information about SAGE, please visit: https://iancovert.com/blog/understanding-shap-sage/. If you like and use this code, please consider citing our work. 
+This repository contains code for the RRIoT model. For source data of the TON-IoT telemetry dataset, please visit: https://research.unsw.edu.au/projects/toniot-datasets. For more information about SAGE, please visit: https://iancovert.com/blog/understanding-shap-sage/. If you like and use this code, please consider citing our work. 
