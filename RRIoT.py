@@ -65,14 +65,14 @@ print(final_data.head())
 #Split the Data and then Write to CSV
 train, test = train_test_split(final_data, test_size=0.20)
 
-train.to_csv('RRIoT\\TON_GPS_train.txt',sep=',',index=False)
-test.to_csv('RRIoT\\TON_GPS_test.txt',sep=',',index=False)
+train.to_csv('RRIoT\\TON_Modbus_train.txt',sep=',',index=False)
+test.to_csv('RRIoT\\TON_Modbus_test.txt',sep=',',index=False)
 
-train.to_csv('RRIoT\\TON_GPS_train.csv',sep=',',index=False)
-test.to_csv('RRIoT\\TON_GPS_test.csv',sep=',',index=False)
+train.to_csv('RRIoT\\TON_Modbus_train.csv',sep=',',index=False)
+test.to_csv('RRIoT\\TON_Modbus_test.csv',sep=',',index=False)
 
-train_path = 'C:\\Users\\crookard\\Desktop\\Anomaly-RL_Full\\Notebooks\\RRIoT\\TON_GPS_train.txt'
-test_path = 'C:\\Users\\crookard\\Desktop\\Anomaly-RL_Full\\Notebooks\\RRIoT\\TON_GPS_test.txt'
+train_path = 'C:\\Users\\crookard\\Desktop\\Anomaly-RL_Full\\Notebooks\\RRIoT\\TON_Modbus_train.txt'
+test_path = 'C:\\Users\\crookard\\Desktop\\Anomaly-RL_Full\\Notebooks\\RRIoT\\TON_Modbus_test.txt'
 
 class data_cls:
     def __init__(self,train_test,**kwargs):
@@ -270,8 +270,8 @@ class QNetwork_DDPG():
 
             # Recurrent layer
             self.actor_model.add(Reshape(input_shape=(actor_hidden_size,), target_shape=(actor_hidden_size, 1)))
-            self.actor_model.add(SimpleRNN(actor_hidden_size, activation='tanh'))
-            #self.actor_model.add(LSTM(critic_hidden_size,))
+            #self.actor_model.add(SimpleRNN(actor_hidden_size, activation='tanh'))
+            self.actor_model.add(LSTM(critic_hidden_size,activation='tanh'))
             
         # Add output layer
         self.actor_model.add(Dense(num_actions, activation='tanh'))
@@ -288,8 +288,8 @@ class QNetwork_DDPG():
             
             # Recurrent Layer 
             self.critic_model.add(Reshape(input_shape=(critic_hidden_size,), target_shape=(critic_hidden_size, 1)))
-            self.critic_model.add(SimpleRNN(critic_hidden_size,))
-            #self.critic_model.add(LSTM(critic_hidden_size,))            
+            #self.critic_model.add(SimpleRNN(critic_hidden_size,))
+            self.critic_model.add(LSTM(critic_hidden_size,))            
             
         # Add output layer
         self.critic_model.add(Dense(1))
@@ -968,9 +968,9 @@ import sage
 from sage import PermutationEstimator, MarginalImputer
 
 # Load the model
-with open("models/RRIoT_model_PCA.json", "r") as jfile:
+with open("models/RRIoT_model_scaled.json", "r") as jfile:
     model = model_from_json(json.load(jfile))
-model.load_weights("models/RRIoT_model_PCA.h5")
+model.load_weights("models/RRIoT_model_scaled.h5")
 
 model.compile(loss=huber_loss,optimizer="sgd")
 
