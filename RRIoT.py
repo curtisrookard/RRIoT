@@ -37,7 +37,7 @@ import time
 
 data = pd.read_csv('C:\\Users\\crookard\\Desktop\\TON-IoT\\Train_Test_IoT_Modbus.csv', sep=',')
 
-#Keep Only Best Features
+# Keep Only Relevant Features
 data = data[['ts', 'FC1_Read_Input_Register','FC2_Read_Discrete_Value','FC3_Read_Holding_Register','FC4_Read_Coil','type']] 
 
 # Creating Histogram 
@@ -58,7 +58,6 @@ type_series = data['type'].reset_index(drop=True)
 
 # Concatenating the scaled data with the 'type' column
 final_data = pd.concat([data_scaled_df, type_series], axis=1)
-
 print(final_data.head())
 
 
@@ -582,7 +581,7 @@ class RLenv(data_cls):
 
     '''
     Returns:
-        + Observation of the enviroment
+        + Observation of the environment
     '''
     def reset(self):
         # Statistics
@@ -975,7 +974,7 @@ model.load_weights("models/RRIoT_model_PCA.h5")
 
 model.compile(loss=huber_loss,optimizer="sgd")
 
-# Define environment, game
+# Define environment 
 env_test = RLenv('test')
 
 total_reward = 0    
