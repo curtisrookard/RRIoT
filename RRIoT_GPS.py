@@ -71,8 +71,8 @@ test.to_csv('RRIoT\\TON_GPS_test.txt',sep=',',index=False)
 train.to_csv('RRIoT\\TON_GPS_train.csv',sep=',',index=False)
 test.to_csv('RRIoT\\TON_GPS_test.csv',sep=',',index=False)
 
-train_path = 'C:\\Users\\crookard\\Desktop\\Anomaly-RL_Full\\Notebooks\\RRIoT\\TON_GPS_train.txt'
-test_path = 'C:\\Users\\crookard\\Desktop\\Anomaly-RL_Full\\Notebooks\\RRIoT\\TON_GPS_test.txt'
+train_path = 'C:\\Users\\crookard\\Desktop\\RRIoT\\Notebooks\\RRIoT\\TON_GPS_train.txt'
+test_path = 'C:\\Users\\crookard\\Desktop\\RRIoT\\Notebooks\\RRIoT\\TON_GPS_test.txt'
 
 class data_cls:
     def __init__(self,train_test,**kwargs):
