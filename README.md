@@ -10,7 +10,7 @@ For source data of the TON-IoT telemetry dataset, please visit: https://research
 
 If you like and use this code, please consider citing our work: Rookard, C., & Khojandi, A. (2024). RRIoT: Recurrent reinforcement learning for cyber threat detection on IoT devices. Computers &amp; Security, 140, 103786.
 
-$
+'''
 @article{rookard2024rriot,
   title={RRIoT: Recurrent reinforcement learning for cyber threat detection on IoT devices},
   author={Rookard, Curtis and Khojandi, Anahita},
@@ -20,4 +20,4 @@ $
   year={2024},
   publisher={Elsevier}
 }
-$
+'''
