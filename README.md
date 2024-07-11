@@ -8,8 +8,9 @@ This repository hosts code associated for the RRIoT model from the manuscript ti
 
 For source data of the TON-IoT telemetry dataset, please visit: https://research.unsw.edu.au/projects/toniot-datasets. For more information about SAGE, please visit: https://iancovert.com/blog/understanding-shap-sage/. 
 
-If you like and use this code, please consider citing our work: Rookard, C., & Khojandi, A. (2024). RRIoT: Recurrent reinforcement learning for cyber threat detection on IoT devices. $\textit{Computers & Security}$, 140, 103786.
+If you like and use this code, please consider citing our work: Rookard, C., & Khojandi, A. (2024). RRIoT: Recurrent reinforcement learning for cyber threat detection on IoT devices. $\textit{Computers \& Security}$, 140, 103786.
 
+$\text{
 @article{rookard2024rriot,
   title={RRIoT: Recurrent reinforcement learning for cyber threat detection on IoT devices},
   author={Rookard, Curtis and Khojandi, Anahita},
@@ -19,4 +20,4 @@ If you like and use this code, please consider citing our work: Rookard, C., & K
   year={2024},
   publisher={Elsevier}
 }
-
+}$
