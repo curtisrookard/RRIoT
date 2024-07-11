@@ -6,4 +6,19 @@ This repository hosts code associated for the RRIoT model from the manuscript ti
 2) Incorporating the Deep Deterministic Policy Gradient model as part of the RIoT model
 3) Applying SAGE to determine global feature importance
 
-For source data of the TON-IoT telemetry dataset, please visit: https://research.unsw.edu.au/projects/toniot-datasets. For more information about SAGE, please visit: https://iancovert.com/blog/understanding-shap-sage/. If you like and use this code, please consider citing our work, preprint available to view at https://www.researchgate.net/publication/374659680_RRIoT_Recurrent_Reinforcement_Learning_for_Cyber_Threat_Detection_on_IoT_Devices. 
+For source data of the TON-IoT telemetry dataset, please visit: https://research.unsw.edu.au/projects/toniot-datasets. For more information about SAGE, please visit: https://iancovert.com/blog/understanding-shap-sage/. 
+
+If you like and use this code, please consider citing our work:
+
+'''
+@article{rookard2024rriot,
+  title={RRIoT: Recurrent reinforcement learning for cyber threat detection on IoT devices},
+  author={Rookard, Curtis and Khojandi, Anahita},
+  journal={Computers \& Security},
+  volume={140},
+  pages={103786},
+  year={2024},
+  publisher={Elsevier}
+}
+'''
+
